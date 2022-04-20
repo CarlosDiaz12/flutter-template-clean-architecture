@@ -21,6 +21,9 @@ dependencies:
   # routing
   auto_route: ^3.2.4
 
+  # response handling
+  dartz: ^0.10.1
+
 dev_dependencies:
   flutter_test:
     sdk: flutter

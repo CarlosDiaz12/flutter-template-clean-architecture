@@ -1,5 +1,6 @@
 import 'package:auto_route/auto_route.dart';
-import 'package:flutter_template_clean_architecture/presentation/pages/home/home_page.dart';
+
+import '../../../presentation/pages/home/home_page.dart';
 
 @MaterialAutoRouter(
   replaceInRouteName: 'Page,Route',
