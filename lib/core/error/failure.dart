@@ -16,15 +16,21 @@ abstract class Failure {
     switch (exception.runtimeType) {
       case SocketException:
         return ServerFailure(exception: exception.toString());
-      case NoInternetErrorException:
+      case NoInternetException:
         return NoInternetFailure(exception: exception.toString());
       case ServerException:
         return ServerFailure(exception: exception.toString());
-
+      case NoLocaltDataException:
+        return NoLocalDataFailure(exception: exception.toString());
       default:
         return UnknownFailure(exception: exception.toString());
     }
   }
+}
+
+class NoLocalDataFailure extends Failure {
+  NoLocalDataFailure({String? title, String? message, String? exception})
+      : super(title: title, message: message, exception: exception);
 }
 
 class ServerFailure extends Failure {
