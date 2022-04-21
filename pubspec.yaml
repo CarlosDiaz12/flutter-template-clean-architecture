@@ -29,6 +29,12 @@ dependencies:
   dio: ^4.0.6
   # connectivity_plus: ^2.3.0
 
+  # ui
+  stacked: ^2.3.3
+  provider: ^6.0.2
+
+  # DI
+  # get_it: ^7.2.0
 dev_dependencies:
   flutter_test:
     sdk: flutter
