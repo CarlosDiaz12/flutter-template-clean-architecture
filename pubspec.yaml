@@ -24,6 +24,9 @@ dependencies:
   # response handling
   dartz: ^0.10.1
 
+  # network
+  connectivity_plus: ^2.3.0
+
 dev_dependencies:
   flutter_test:
     sdk: flutter

@@ -20,16 +20,16 @@ abstract class Failure {
         return NoInternetFailure(exception: exception.toString());
       case ServerException:
         return ServerFailure(exception: exception.toString());
-      case NoLocaltDataException:
-        return NoLocalDataFailure(exception: exception.toString());
+      case NoDataException:
+        return NoDataFailure(exception: exception.toString());
       default:
         return UnknownFailure(exception: exception.toString());
     }
   }
 }
 
-class NoLocalDataFailure extends Failure {
-  NoLocalDataFailure({String? title, String? message, String? exception})
+class NoDataFailure extends Failure {
+  NoDataFailure({String? title, String? message, String? exception})
       : super(title: title, message: message, exception: exception);
 }
 
