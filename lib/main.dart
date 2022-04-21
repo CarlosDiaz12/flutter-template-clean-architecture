@@ -19,6 +19,7 @@ class App extends StatelessWidget {
     return MultiProvider(
       providers: InjectionContainer.providers,
       child: MaterialApp.router(
+        debugShowCheckedModeBanner: false,
         routerDelegate: _appRouter.delegate(),
         routeInformationParser: _appRouter.defaultRouteParser(),
         title: 'Flutter Clean Architecture Template',

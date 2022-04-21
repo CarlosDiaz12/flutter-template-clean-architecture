@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_template_clean_architecture/domain/usecases/get_employee_by_code.dart';
 import 'package:flutter_template_clean_architecture/presentation/pages/home/home_viewmodel.dart';
+import 'package:provider/provider.dart';
 import 'package:stacked/stacked.dart';
 
 class HomePage extends StatelessWidget {
@@ -17,7 +19,8 @@ class HomePage extends StatelessWidget {
             child: Text('Home Page'),
           );
         },
-        viewModelBuilder: () => HomeViewModel(),
+        viewModelBuilder: () => HomeViewModel(
+            getEmployeeByCode: Provider.of<GetEmployeeByCode>(context)),
       ),
     );
   }
