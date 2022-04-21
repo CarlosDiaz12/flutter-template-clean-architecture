@@ -2,7 +2,7 @@ import 'package:dartz/dartz.dart';
 
 import '../../core/error/exception.dart';
 import '../../core/error/failure.dart';
-import '../../core/platform/network_info.dart';
+import '../../core/network/network_info.dart';
 import '../../domain/entities/employee.dart';
 import '../../domain/repositories/employee_repository.dart';
 import '../datasources/remote/services/employee_service.dart';
