@@ -3,6 +3,7 @@ import 'package:flutter_template_clean_architecture/core/config/injection_contai
 import 'package:provider/provider.dart';
 
 import 'core/config/router/routes.gr.dart';
+import 'presentation/common/style/app_theme.dart';
 
 void main() async {
   await InjectionContainer.setupProvider();
@@ -23,9 +24,8 @@ class App extends StatelessWidget {
         routerDelegate: _appRouter.delegate(),
         routeInformationParser: _appRouter.defaultRouteParser(),
         title: 'Flutter Clean Architecture Template',
-        theme: ThemeData(
-          primarySwatch: Colors.blue,
-        ),
+        theme: AppTheme.lightTheme,
+        darkTheme: AppTheme.darkTheme,
         //home: ,
       ),
     );
