@@ -27,3 +27,8 @@ class StyleUtils {
   static const Widget horizontalSpaceLarge =
       SizedBox(width: _HorizontalSpaceLarge);
 }
+
+class Fonts {
+  static const String raleway = 'Raleway';
+  // etc
+}
